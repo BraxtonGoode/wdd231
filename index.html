@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Braxton Goode">
-    <meta name="description" content="A course home page that i will use to host all the websites i create this semester">
-    <title>Course Home Page</title>
+    <meta name="description" content="A course home page that I will use to host all the websites i create this semester namely in WDD 231.">
+    <title>Course Home Page - Braxton Goode</title>
+    <!-- stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/courseHP.css" rel="stylesheet">
+    <!-- javascripts -->
+    <script src="scripts/courseHP.js" defer></script>
+    <!-- addatives -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <div>
+        <div class="homePage">
             <img src="images/profilePic.WebP" height="300" >
             <h1>Braxton Goode</h1>
         </div>
-        <nav>
+        <button id="menu" title="menu"></button>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Chamber</a></li>
@@ -35,12 +46,15 @@
             </figure>          
 
         </section>
-        <sections>
+        <section>
             <h2>Web and Computer Programming Certificate</h2>
-        </sections>
+
+            <div class="classesTaken"></div>
+        </section>
     </main>
     <footer>
         <p>@ <span id="currentyear"></span> Braxton Goode, Arizona</p>
+        <p id="lastModified"></p>
     </footer>
     
 </body>
