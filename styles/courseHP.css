@@ -92,14 +92,20 @@ nav {
     width: 100%;
     margin-top: 1rem;
     background-color: var(--navBackgroundColor);
+    
 }
 
 nav a {
+    
     display: none;
     text-align: center;
     text-decoration: none;
     padding: 10px;
     color: var(--headerTextColor);
+}
+a {
+    font-size: larger;
+    
 }
 
 .navList{
