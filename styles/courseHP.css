@@ -3,21 +3,21 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
   
-  .roboto-regular {
+.roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
-  .roboto-bold {
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-/* fixed items */
+/* Fixed items */
 :root {
     --largerFont: 700;
     --mediumFont: 400;
@@ -27,24 +27,24 @@
     --textColor: white;  
     --navBackgroundColor: black;
     --navTextColor: white;
-    --navHoverColor:lightBlue;
+    --navHoverColor: lightblue;
     --classTakenColor: rgba(83, 33, 33, 0.767);
-
 }
-/* Course Home page*/
 
-
-/* full body */
+/* Full body */
 html, body {
     height: 100%;
+    margin: 0; /* Add margin reset */
     background-color: var(--mainbackgroundColor);
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-/* header components */
+/* Header components */
 header {
     display: flex;
     flex-direction: column; /* Stack vertically */
@@ -60,7 +60,6 @@ header {
 
 .homePage img {
     margin: 15px; 
-
 }
 
 #menu {
@@ -73,7 +72,7 @@ header {
     text-decoration: none;
     padding: .5rem .75rem;
     background: none; /* Remove button background */
-    color: var(--headerTextColor);
+    color: var(--navTextColor);
     border: none;
     cursor: pointer;
 }
@@ -92,23 +91,21 @@ nav {
     width: 100%;
     margin-top: 1rem;
     background-color: var(--navBackgroundColor);
-    
 }
 
 nav a {
-    
     display: none;
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    color: var(--headerTextColor);
-}
-a {
-    font-size: larger;
-    
+    color: var(--navTextColor);
 }
 
-.navList{
+a {
+    font-size: larger;
+}
+
+.navList {
     list-style-type: none;
     color: var(--navTextColor);
 }
@@ -122,45 +119,35 @@ nav a:hover {
     display: block;
 }
 
-/* main components */
+/* Main components */
+main {
+    flex: 1; 
+}
 
 .container {  
-    height: 75vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .flexbox {
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc; /* Optional for visual clarity */
     flex: 1 1 100%; /* Default to full width on smaller screens */
 }
-.flexbox h2{
+
+.flexbox h2 {
     text-align: center;
     background-color: var(--titlebackgroundColor);
-
 }
 
-.item-1 {
-    
-}
-.courseList {
-    list-style-type: disc; /* Ensure it uses bullet points */
-    padding-left: 20px; /* Add some padding to the left for better visibility */
-}
-
-.courseList li {
-    margin-bottom: 5px; /* Optional: add space between list items */
-}
-
+.item-1 {}
 .item-2 {
     text-align: center;
 }
-.item-3 {
-    
+.item-3 {}
 
-}
 .coursesButton { 
     display: flex;
     justify-content: space-around;
@@ -168,13 +155,13 @@ nav a:hover {
     border: 1px solid black;
     margin-bottom: 15px;
 }
+
 .coursesButton button {
     height: 50px;
     width: 70px;
     flex: 1;
     margin: 5px;
     border-radius: 10px;
-    
 }
 
 .classesTaken {
@@ -183,6 +170,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
 }
+
 .course {
     margin: 2px;
     padding: 5px;
@@ -192,13 +180,12 @@ nav a:hover {
     text-align: center;
 }
 
-
-/* footer coponents */
+/* Footer components */
 footer {
     text-align: center;
     background-color: var(--titlebackgroundColor);    
     padding: 1rem;
-    border-top: 2px;
+    border-top: 2px solid; /* Specify border style */
     font-weight: 500;
 }
 
