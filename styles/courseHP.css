@@ -119,7 +119,7 @@ nav a:hover {
 /* main components */
 
 .container {  
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
