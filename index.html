@@ -9,6 +9,7 @@
     <!-- stylesheets -->
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/courseHP.css" rel="stylesheet">
+    <link href="styles/courseHPSizing.css" rel="stylesheet">
     <!-- javascripts -->
     <script src="scripts/courseHP.js" defer></script>
     <!-- addatives -->
@@ -20,12 +21,12 @@
 <body>
     <header>
         <div class="homePage">
-            <img src="images/profilePic.WebP" height="300" >
+            <img src="images/profilePic.WebP" height="150" alt="Profile picture">
             <h1>Braxton Goode</h1>
         </div>
         <button id="menu" title="menu"></button>
         <nav class="nav">
-            <ul>
+            <ul class="navList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Chamber</a></li>
                 <li><a href="https://github.com/BraxtonGoode">Github Profile</a></li>
@@ -33,21 +34,32 @@
             </ul>
         </nav> 
     </header>
-    <main>
-        <section>
+    <main class="container">
+        <section class="flexbox item-1">
             <h2>Course Work</h2>
+            <ul class="courseList">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
 
         </section>
-        <section>
+        <section class="flexbox item-2" >
             <h2>Tucson, Arizona</h2>
             <figure>
-                <img src="images/arizonaFlag.webp">
-                <figcaption></figcaption>
+                <img src="images/arizonaFlag.webp" alt="Arizona Flag">
+                <figcaption>Arizona Flag</figcaption>
             </figure>          
 
         </section>
-        <section>
+        <section class="flexbox item-3">
             <h2>Web and Computer Programming Certificate</h2>
+            <div class="coursesButton">
+                <button id="All">All</button>
+                <button id="CSE">CSE</button>
+                <button id="WDD">WDD</button>     
+            </div>
+
 
             <div class="classesTaken"></div>
         </section>

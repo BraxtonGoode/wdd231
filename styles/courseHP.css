@@ -25,18 +25,44 @@
     --mainbackgroundColor: white;
     --titlebackgroundColor: lightblue;
     --textColor: white;  
+    --navBackgroundColor: black;
+    --navTextColor: white;
+    --navHoverColor:lightBlue;
+    --classTakenColor: rgba(83, 33, 33, 0.767);
 
 }
 /* Course Home page*/
 
+
+/* full body */
 html, body {
     height: 100%;
     background-color: var(--mainbackgroundColor);
     font-family: "Roboto", sans-serif;
 }
+
+
+
+
+/* header components */
 header {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center the items horizontally */
     background-color: var(--titlebackgroundColor);
 }
+
+.homePage {
+    display: flex;
+    align-items: center; /* Align image and heading vertically */
+    margin-bottom: 20px; 
+}
+
+.homePage img {
+    margin: 15px; 
+
+}
+
 #menu {
     display: block;
     position: absolute;
@@ -65,6 +91,7 @@ nav {
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
+    background-color: var(--navBackgroundColor);
 }
 
 nav a {
@@ -75,15 +102,100 @@ nav a {
     color: var(--headerTextColor);
 }
 
-ul li {
+.navList{
     list-style-type: none;
+    color: var(--navTextColor);
 }
 
 nav a:hover {
-    background-color: var(--standoutColor);
+    background-color: var(--navHoverColor);
     color: white;
 }
 
 .show a {
     display: block;
+}
+
+/* main components */
+
+.container {  
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flexbox {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional for visual clarity */
+    flex: 1 1 100%; /* Default to full width on smaller screens */
+}
+.flexbox h2{
+    text-align: center;
+    background-color: var(--titlebackgroundColor);
+
+}
+
+.item-1 {
+    
+}
+.courseList {
+    list-style-type: disc; /* Ensure it uses bullet points */
+    padding-left: 20px; /* Add some padding to the left for better visibility */
+}
+
+.courseList li {
+    margin-bottom: 5px; /* Optional: add space between list items */
+}
+
+.item-2 {
+    text-align: center;
+}
+.item-3 {
+    
+
+}
+.coursesButton { 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.coursesButton button {
+    height: 50px;
+    width: 70px;
+    flex: 1;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+
+.classesTaken {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.course {
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+
+/* footer coponents */
+footer {
+    text-align: center;
+    background-color: var(--titlebackgroundColor);    
+    padding: 1rem;
+    border-top: 2px;
+    font-weight: 500;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }

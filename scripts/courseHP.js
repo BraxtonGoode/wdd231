@@ -116,6 +116,13 @@ function displayCourses(courses) {
     courses.forEach(course => {
         const courseCard = createCourseCard(course);
         container.innerHTML += courseCard;
+        // Check if the course is completed
+        if (course.completed === true) {
+            // Select the last added course card
+            const lastCourseCard = container.lastElementChild; // Get the last child added to the container
+            lastCourseCard.style.backgroundColor = 'var(--classTakenColor)';
+        }
+
     });
 }
 
@@ -123,8 +130,27 @@ function displayCourses(courses) {
 displayCourses(courses);
 
 
+// if statement to only show courses based upon button click
+const buttonPress = document.querySelectorAll("button");
 
-
+buttonPress.forEach(button => {
+    button.addEventListener("click", () => {
+        if (button.id === "All") {
+            console.log("All button pressed");
+            displayCourses(courses);
+        } else if (button.id === "CSE") {
+            console.log("CSE button pressed");
+            // Logic for CSE button
+            const filteredCourse = courses.filter(course => course.subject === "CSE")
+            displayCourses(filteredCourse)
+        } else if (button.id === "WDD") {
+            console.log("WDD button pressed");
+            // Logic for WDD button
+            const filteredCourse = courses.filter(course => course.subject === "WDD")
+            displayCourses(filteredCourse)
+        }
+    });
+});
 
 
 

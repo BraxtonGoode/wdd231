@@ -1,0 +1,48 @@
+/* smaller screen */
+@media screen and (min-width: 800px)
+{
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;    
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    nav ul {
+        margin: 0;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+    }
+    .navList li {
+        display: inline-block;
+    }
+
+
+}
+@media (max-width: 768px) {
+    .course {
+        width: calc(50% - 10px); /* 1 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+
+/* larger screen */
+@media (min-width: 600px) {
+    .item-1, .item-2 {
+        flex: 1 1 45%; /* Take up 45% width of the container */
+    }
+    .item-3 {
+        flex: 1 1 100%; /* Take full width below items 1 and 2 */
+    }
+}
