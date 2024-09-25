@@ -7,19 +7,67 @@
     <!-- meta description and name -->
     <meta name="description" content="This site is the main page for the Tucson Chamber of commerce which is being created by Braxton Goode for WDD231">
     <meta name="author" content="Braxton Goode">
-    <!-- links -->
-    <link rel="icon"  href="images/favicon.ico">
-
-
+    <!-- links icon & stylesheets -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="styles/chamber.css" rel="stylesheet">
+    <link href="styles/largeChamber.css" rel="stylesheet">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <!-- scripts -->
+    <script src="scripts/chamber.js" defer></script>
     <!-- meta social media -->
     <meta property="og:title" content="Tucson, AZ">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://2.bp.blogspot.com/-WunQYiU9GH0/UpCstPdCEgI/AAAAAAAAaaY/acwUi9WKV0g/s1600/Scan+2.jpg">
-    <meta property="og:URL" content="https://BraxtonGoode.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://BraxtonGoode.github.io/wdd231/chamber/directory.html">
 
     
 </head>
 <body>
+    <header>
+        <div id="Websitelogo">
+            <img src="images/TucsonMainPhoto.jpg" width="40px" height="40px" alt="Tuscon image">
+            <div>
+                <h1>Tucson</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+
+            
+        </div>
+        <nav>
+            <button id="menu">&#9776;</button>
+            <ul class="menuLinks">
+                <li><a href="">Home</a></li>
+                <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="cards"></div>
+
+    </main>
+    <footer>
+        <div class="footerChamberInfo">
+            <P><strong>Tucson Chamber of Commerce</strong></P>
+            <p>212 E Broadway Blvd.</p>
+            <p>Tucson, AZ 85701</p>
+            <p>info@tucsonchamber.org</p>
+            <p>(520) 792-1212</p>
+            
+        </div>
+        <div class="footerSocial">
+
+        </div>
+        <div class="classStudentInfo">
+            <p>WDD 231 Class Project</p>
+            <p>Braxton Goode</p>
+            <p>@ <span id="currentyear"></span> Tucson Chamber of Commerce</p>
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
     
 </body>
 </html>

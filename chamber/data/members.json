@@ -1,0 +1,18 @@
+{
+    "company1": {
+        "name": "Walmart",
+        "address": "2823 W.Valencia Road, Tucson, AZ 85746",
+        "phoneNumber": "520-908-2556",
+        "url":"http://www.walmart.com/",
+        "image": "https://res.cloudinary.com/micronetonline/image/fetch/c_crop,h_41,w_150,x_0,y_0/https://mmp4production.blob.core.windows.net/publicfiles/f6ff539e-05c3-4a04-b48f-6abed94f2996%2F121b29c0-008d-4b66-9c2b-9dbb7a0bc8a9",
+        "membershipLevel": 1
+    },
+    "company2": {
+        "name": "Barros",
+        "address": "410 N. Wilmot Rd.Tucson, AZ 85711",
+        "phoneNumber": "520-296-0616",
+        "url":"https://www.barrospizza.com/locations/tucson/",
+        "image": "https://powercenters.vestar.com/queencreekmarketplace/wp-content/uploads/sites/3/2015/04/barros_logo.png",
+        "membershipLevel": 1
+    }
+}
