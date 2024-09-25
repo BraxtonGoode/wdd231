@@ -1,0 +1,21 @@
+[
+    {
+        "FamilyName": "Goode",
+        "MoveIn": "Feb, 13, 2023",
+        "NumOfFamilyMembers": 3,
+        "VisitedByBishopric": false,
+        "IndividualFamilyMembers": [
+            {
+                "name": "Tomas",
+                "Gender": "male",
+                "Birthdate": "1973-28-9"
+            },
+            {
+                "name": "Braxton",
+                "Gender": "male",
+                "Birthdate": "2001-13-2"
+            }
+
+        ]
+    }
+]

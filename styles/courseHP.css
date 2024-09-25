@@ -81,7 +81,7 @@ header {
     content: '☰';
 }
 
-#menu.show::before {
+#menu.open::before {
     content: '✖'; 
 }
 
@@ -115,7 +115,7 @@ nav a:hover {
     color: white;
 }
 
-.show a {
+.open a {
     display: block;
 }
 
