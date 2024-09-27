@@ -5,14 +5,13 @@
     --mainbackgroundColor: white;
     --titlebackgroundColor: lightblue;
     --textColor: white;  
-    --navBackgroundColor: black;
-    --navTextColor: white;
+    --navtextColor: black;
     --navHoverColor: lightblue;
     --classTakenColor: rgba(83, 33, 33, 0.767);
 }
 html, body{
     height: 100%; /* Make sure the body takes up the full height */
-    margin: 0; /* Remove default margin */
+
     display: flex; /* Set body as a flex container */
     flex-direction: column; /* Align items in a column */
 }
@@ -53,29 +52,64 @@ header {
 
 
 /* navigation */
-
-nav ul {
-    list-style: none;
+nav {
+    background-color: var(--titlebackgroundColor);
     padding: 0; 
     margin: 0; 
-    display: flex; 
-    gap: 20px; 
+    width: 100%; 
+}
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+#menuButton::before {
+    content: "\2630";
 }
 
-nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Set link color */
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    text-decoration: none;
+    color: var(--navBackgroundColor);
+    
+}
+li.current-menu-item {
+    background-color: rgba(0,0,0,0.2);
 }
 
-nav a:hover {
-    text-decoration: underline; 
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
 }
+/* nav open and closed */
+#menuButton.open::before{
+    content: "x";
+
+}
+
+
+ul.menuLinks.open{
+display: block;
+}
+
+
+
 
 /* Main */
 main {
     flex: 1;
 }
 
+main h2 {
+    text-align: center;
+}
 #cards {
  text-align: center;
  
@@ -93,12 +127,12 @@ main {
 /* footer */
 footer {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    background-color: var(--titlebackgroundColor);    
-    padding: 1rem;
-    border-top: 2px solid; 
-    font-weight: 500;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--titlebackgroundColor);  
+    text-align: center;  
+
 }
 
 footer p {

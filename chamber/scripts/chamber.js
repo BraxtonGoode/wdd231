@@ -1,6 +1,6 @@
 // navigation menu
 
-const hamMenuButton = document.querySelector('#menu');
+const hamMenuButton = document.querySelector('#menuButton');
 const navigation = document.querySelector('.menuLinks')
 
 hamMenuButton.addEventListener('click', () => {
