@@ -146,9 +146,10 @@ const listBusinesses = (members) => {
     // Append tbody to the table
     table.appendChild(tbody);
 
-    // Append the table to the cards container
+    // Append the table to the list container
     list.appendChild(table);
 };
+
 const getClear = () =>{
         // Clear existing content
         cards.innerHTML = ''; // Clear any existing cards or tables
