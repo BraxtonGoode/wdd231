@@ -114,7 +114,9 @@ footer {
     align-items: center;
     background-color: var(--titlebackgroundColor);  
     text-align: center;  
-
+}
+.footerSocial a{
+    margin: 10px;
 }
 
 footer p {
