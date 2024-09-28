@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-            <img id="websiteLogo" src="images/TucsonMainPhoto.webp" loading="lazy" width="50" height="50" alt="Tuscon image" >
+            <img class="websiteLogo" src="images/TucsonMainPhoto.webp" loading="lazy" width="50" height="50" alt="Tuscon image" >
             <div><h1>Tucson <br>Chamber of Commerce<br></h1> </div>     
             <button id="menuButton"></button>
     </header>
@@ -37,7 +37,13 @@
     </nav>    
     <main>
         <h2>Buisness Directory</h2>
+        <div class="displaybuttons">
+            <button id="displaycard">Display Buisnesses</button>
+            <button id="listcards">List Buisnesses</button>
+        </div>        
         <div id="cards"></div>
+        <div id="list"></div>
+ 
     </main>
     <footer>
         <div class="footerChamberInfo">

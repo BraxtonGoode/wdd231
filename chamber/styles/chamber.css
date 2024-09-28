@@ -25,7 +25,7 @@ header div {
     text-align: center;
 }
 /* top left website logo */
-#websiteLogo {
+.websiteLogo {
     border-radius: 50%; 
 }
 /* navigation */
@@ -86,6 +86,21 @@ main {
 
 main h2 {
     text-align: center;
+}
+.displaybuttons {
+    text-align: center;
+}
+.business-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2; /* Light gray background for header */
 }
 #cards {
  text-align: center;
