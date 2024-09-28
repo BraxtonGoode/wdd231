@@ -9,12 +9,6 @@ hamMenuButton.addEventListener('click', () => {
 }
 )
 
-
-
-
-
-
-
 // card creation 
 const cards = document.querySelector('#cards'); // Ensure there's an element with id "cards"
 
@@ -62,8 +56,8 @@ const displayBusinesses = (members) => {
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Company is ${member.name}`);
         img.setAttribute('loading', 'lazy')
-        img.setAttribute('width', 70)
-        img.setAttribute('height', 50)
+        img.setAttribute('width', 100)
+        img.setAttribute('height', 100)
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`; // Add membership level
 
         // Append the elements to the card

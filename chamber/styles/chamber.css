@@ -24,12 +24,10 @@ header {
 header div {
     text-align: center;
 }
-
 /* top left website logo */
 #websiteLogo {
     border-radius: 50%; 
 }
-
 /* navigation */
 nav {
     display: grid;
@@ -81,9 +79,6 @@ ul.menuLinks {
     content: "x";
 
 }
-
-
-
 /* Main */
 main {
     flex: 1;
@@ -96,7 +91,6 @@ main h2 {
  text-align: center;
  
 }
-
 .buissnessCard {
     border: 2px solid black; 
     border-radius: 5px;
@@ -104,8 +98,12 @@ main h2 {
     margin: 20px; 
 }
 
-
-
+.businessCard img {
+    width: auto;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
 /* footer */
 footer {
     display: flex;
