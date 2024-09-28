@@ -27,7 +27,7 @@ async function getFetchData(file) {
         }
 
         const data = await response.json();
-        console.table(data); // Log the fetched data for debugging
+        // console.table(data); // Log the fetched data for debugging
 
         // Convert the object into an array to use for display
         const members = Object.values(data); // Get the values as an array
