@@ -1,5 +1,5 @@
 /* smaller screen */
-@media (max-width: 640px) {
+@media (max-width: 500px) {
     footer {
         flex-direction: column; /* Stack items on smaller screens */
         align-items: center; /* Center align items */
