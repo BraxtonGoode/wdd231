@@ -61,6 +61,7 @@ const displayBusinesses = (members) => {
         webUrl.setAttribute('target', '_blank'); // Open in a new tab
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Company is ${member.name}`);
+        img.setAttribute('loading', 'lazy')
         img.setAttribute('width', 70)
         img.setAttribute('height', 50)
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`; // Add membership level
