@@ -22,6 +22,9 @@
         display: flex;
         justify-content: space-around;
     }
+    nav {
+        grid-template-rows: 1fr;
+    }
 
 
     ul.menuLinks a:hover {

@@ -2,7 +2,7 @@
     "company1": {
         "name": "Walmart",
         "address": "2823 W.Valencia Road, Tucson, AZ 85746",
-        "phoneNumber": "520-908-2556",
+        "phoneNumber": "(520) 908-2556",
         "url":"http://www.walmart.com/",
         "image": "https://res.cloudinary.com/micronetonline/image/fetch/c_crop,h_41,w_150,x_0,y_0/https://mmp4production.blob.core.windows.net/publicfiles/f6ff539e-05c3-4a04-b48f-6abed94f2996%2F121b29c0-008d-4b66-9c2b-9dbb7a0bc8a9",
         "membershipLevel": 1
@@ -10,9 +10,51 @@
     "company2": {
         "name": "Barros",
         "address": "410 N. Wilmot Rd.Tucson, AZ 85711",
-        "phoneNumber": "520-296-0616",
+        "phoneNumber": "(520) 296-0616",
         "url":"https://www.barrospizza.com/locations/tucson/",
         "image": "https://powercenters.vestar.com/queencreekmarketplace/wp-content/uploads/sites/3/2015/04/barros_logo.png",
         "membershipLevel": 1
+    },
+    "company3": {
+        "name": "South32 Hermosa Inc.",
+        "address": "1860 E. River Road #200, Tucson, AZ, 85718",
+        "phoneNumber": "(520) 485-1300",
+        "url":"www.south32hermosa.com",
+        "image": "https://south32hermosa.com/wp-content/uploads/2022/12/south32-hermosa-logo-with-hermosa-tag-cropped-fixed.svg",
+        "membershipLevel": 2
+    },
+    "company4": {
+        "name": "Chef Wang 状元楼",
+        "address": "356 E. Grant Rd. Tucson, AZ, 85705",
+        "phoneNumber": "(520) 367-5375",
+        "url":"https://www.chefwangarizona.com/",
+        "image": "https://tucsonfoodie.com/wp-content/uploads/2022/11/TF-chef-wang-facade-1.jpg",
+        "membershipLevel": 3
+    },
+    "company5": {
+        "name": "Raytheon Missle Systems",
+        "address": "3360 E. Hemisphere Loop Building, Tucson, AZ, 85706",
+        "phoneNumber": "(520) 746-2100",
+        "url":"https://www.rtx.com/raytheon",
+        "image": "https://prd-sc102-cdn.rtx.com/raytheon/-/media/themes/raytheon-technologies/rtx-shared/rtx-theme/images/raytheon.svg?rev=c0d2d88fe39b4f54b95f79444c566c94&w=354&hash=ED664F3C75561C12BA0B44D12FAD89FF",
+        "membershipLevel": 2
+    },
+    "company6": {
+        "name": "Tucson Games & Gadgets",
+        "address": "5870 E. Broadway Boulevard #110, Tucson, AZ,85711",
+        "phoneNumber": "(520) 603-4037",
+        "url":"https://tucsongamesandgadgets.com/",
+        "image": "https://43z27f.p3cdn1.secureserver.net/wp-content/uploads/2023/06/2-e1688089835220.png",
+        "membershipLevel": 3
+    },
+    "company7": {
+        "name": "Eegee's",
+        "address": "401 W Valencia Rd. Tucson, AZ 85706",
+        "phoneNumber": "(520) 746-0960",
+        "url":"https://eegees.com/",
+        "image": "https://cdn.shortpixel.ai/spai/w_150+q_lossy+ret_img+to_webp/i0.wp.com/eegees.com/wp-content/uploads/2021/05/EEGEE_PrimaryHorizontal_FC_Alt.png?fit=3107%2C1390&ssl=1",
+        "membershipLevel": 3
     }
+    
+
 }

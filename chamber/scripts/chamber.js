@@ -1,7 +1,7 @@
 // navigation menu
 
 const hamMenuButton = document.querySelector('#menuButton');
-const navigation = document.querySelector('.menuLinks')
+const navigation = document.querySelector('#animateme')
 
 hamMenuButton.addEventListener('click', () => {
     navigation.classList.toggle('open')
@@ -47,24 +47,29 @@ const displayBusinesses = (members) => {
 
         const businessName = document.createElement('h2');
         const address = document.createElement('p');
-        const webUrl = document.createElement('a'); // Use anchor element for the URL
+        const phoneNumber = document.createElement('p')
+        const webUrl = document.createElement('a'); 
         const img = document.createElement('img');
         const membershipLevel = document.createElement('p');
 
-        // Set the properties of the created elements
+        //properties of the created elements
         businessName.textContent = member.name;
-        address.textContent = member.address; // Use addresses from JSON
+        address.textContent = member.address;
+        phoneNumber.textContent = member.phoneNumber
         webUrl.textContent = "Visit Website"; // Link text
         webUrl.setAttribute('href', member.url); // Add the URL
         webUrl.setAttribute('target', '_blank'); // Open in a new tab
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Company is ${member.name}`);
+        img.setAttribute('width', 70)
+        img.setAttribute('height', 50)
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`; // Add membership level
 
         // Append the elements to the card
         card.appendChild(img);
         card.appendChild(businessName);
         card.appendChild(address);
+        card.appendChild(phoneNumber)
         card.appendChild(webUrl);
         card.appendChild(membershipLevel);
 
