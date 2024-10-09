@@ -103,11 +103,15 @@ const courses = [
 
 
 function createCourseCard(course) {
-    return `
-        <div class="course">
-            <h3>${course.subject} ${course.number}</h3>
-        </div>
-    `;
+    const button = document.createElement("button");
+    button.className = "course";
+    button.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+
+    button.addEventListener("click", () => {
+        displayCourseDetails(course)
+    })
+
+    return button
 }
 
 function displayCourses(courses) {
@@ -115,12 +119,11 @@ function displayCourses(courses) {
     container.innerHTML = "";
     courses.forEach(course => {
         const courseCard = createCourseCard(course);
-        container.innerHTML += courseCard;
+        container.appendChild(courseCard);
         // Check if the course is completed
         if (course.completed === true) {
             // Select the last added course card
-            const lastCourseCard = container.lastElementChild; // Get the last child added to the container
-            lastCourseCard.style.backgroundColor = 'var(--classTakenColor)';
+            courseCard.style.backgroundColor = 'var(--classTakenColor)';
         }
 
     });
@@ -151,8 +154,36 @@ buttonPress.forEach(button => {
         }
     });
 });
+// click on courses to display dialog
+const courseDetails = document.querySelector('.courseDetails')
+const closeModal = document.querySelector("button")
 
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+
+
+    
+    closeModal.innerHTML = "❌";
+    closeModal.id = 'closeModal';
+    closeModal.addEventListener("click", () => {
+      courseDetails.close();
+    });
+
+    courseDetails.appendChild(closeModal)
+    courseDetails.innerHTML += `
+      <button id="closeModal"></button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+
+  }
 
 
 

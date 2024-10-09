@@ -146,7 +146,21 @@ main {
 .item-2 {
     text-align: center;
 }
-.item-3 {}
+/* dialog box */
+dialog {
+    
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+::backdrop {
+    background-color: var(--mainbackgroundColor);
+}
+dialog button {
+    position: absolute;
+}
+
+
 
 .coursesButton { 
     display: flex;
@@ -178,6 +192,7 @@ main {
     border-radius: 10px;
     width: calc(33.33% - 20px);
     text-align: center;
+    cursor: pointer;
 }
 
 /* Footer components */
