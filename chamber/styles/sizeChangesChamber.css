@@ -9,6 +9,13 @@
         margin: 10px 0; /* Vertical margin for stacked items */
         text-align: center; /* Center text for better appearance */
     }
+        .middle-section {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .events, .current-weather, .weather-forecast {
+        margin: 10px 0; /* Remove side margins */
+    }
 }
 /* Larger screen */
 @media only screen and (min-width: 38rem) {
@@ -28,5 +35,7 @@
     ul.menuLinks a:hover {
         background-color: rgba(255,255,255,0.2);
     }
+
+
 
 }
