@@ -155,35 +155,32 @@ th {
     background-color: #0056b3;
 }
 
-.middle-section {
+.middle-section, #boxes{
     display: flex;
     justify-content: space-around; 
     width: 100%; 
     margin: 20px 0; 
 }
 
-.events, .current-weather, .weather-forecast {
+.events, .current-weather, .weather-forecast, .box{
     flex: 1; 
     margin: 0 10px; 
     padding: 10px;
     border: 5px solid black;
     border-radius: 10px;    
 }
-.section-title {
+.title, .box h3 {
+    text-align: center;
     background-color: var(--titlebackgroundColor);
     padding: 5px;
 }
-h3 {
+
+.box {
+    margin: 10px;
     text-align: center;
 }
 
-.business-cards {
-    width: 100%; /* Full width for business cards */
-    margin: 20px 0; /* Space above and below */
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 10px;
-}
+
 
 
 

@@ -9,7 +9,7 @@
         margin: 10px 0; /* Vertical margin for stacked items */
         text-align: center; /* Center text for better appearance */
     }
-        .middle-section {
+    .middle-section, #boxes {
         flex-direction: column; /* Stack vertically */
     }
 
