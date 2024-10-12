@@ -191,19 +191,15 @@ th {
     display: flex;
 }
 
-form {
+.form1 {
     margin: 1rem 2rem;
-  
-    label {
+}
+label {
       display: block;
       color: var(--navtextColor);
       padding-top: .2rem;
     }  
-    input[type=text],
-    input[type=tel],
-    input[type=email],
-    select,
-    textarea {
+input[type=text],input[type=tel],input[type=email],select,textarea {
       display: block;
       margin: .1rem 0 1rem 0 ;
       padding: 1rem;
@@ -215,11 +211,11 @@ form {
       width: 250px;
     }
   
-    input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+input:required {border-left-color: #d70000;}
+input:focus {border-left-color: black; outline:none;}
+input:required:valid{border-left-color: green;}
   
-    input[type=submit] {
+input[type=submit] {
       border: none;
       text-align: center;
       background-color: var(--navtextColor);
@@ -228,7 +224,7 @@ form {
       padding: .75rem 1.5rem; 
       font-size: 1.2rem;
     }
-  }  
+   
 
 
 .membership_levels div {
@@ -242,14 +238,10 @@ form {
 }
 @keyframes slideIn {
     from {
-        translate: 150vw 0;
-        scale:  300% 1;
-        
+        transform: translate(150vw, 0) scale(3, 1); 
     }
     to {
-        translate: 0 0;
-        scale: 100% 1;
-
+        transform: translate(0, 0) scale(1, 1); 
     }
 }
 dialog {
