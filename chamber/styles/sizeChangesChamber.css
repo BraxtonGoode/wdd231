@@ -16,6 +16,9 @@
     .events, .current-weather, .weather-forecast {
         margin: 10px 0; /* Remove side margins */
     }
+    .container {
+        flex-direction: column;
+    }
 }
 /* Larger screen */
 @media only screen and (min-width: 38rem) {
