@@ -18,7 +18,6 @@ async function apiFetch() {
         const response = await fetch(url)
         if (response.ok){
             const data = await response.json()
-            console.log(data)
             displayCurrentResults(data)
         } else {
             throw Error(await response.text())
@@ -129,7 +128,7 @@ async function getFetchData(file) {
         if (!response.ok) {
             throw new Error('Network response was not ok: ' + response.statusText);
         }
-        console.log('test 1')
+
 
         const data = await response.json();
         // console.table(data); // Log the fetched data for debugging
@@ -159,7 +158,7 @@ const displayBusinesses = (members) => {
 
     selectedMembers.forEach(member => {        
         if (member.membershipLevel >=2){
-            console.log(member.name)
+
             const card = document.createElement('section');
 
             card.classList.add("box");
@@ -203,3 +202,4 @@ const displayBusinesses = (members) => {
 const fileName = "data/members.json"; // Ensure the path is correct
 
 getFetchData(fileName);
+console.log(document.querySelector('.picture').src);

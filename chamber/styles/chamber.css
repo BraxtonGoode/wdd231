@@ -8,6 +8,7 @@
     --navtextColor: black;
     --navHoverColor: lightblue;
     --classTakenColor: rgba(83, 33, 33, 0.767);
+    --homeButton:blue;
 }
 html, body{
     height: 100%; /* Makes sure the body takes up the full height */
@@ -144,7 +145,7 @@ th {
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: var(--titlebackgroundColor);
+    background-color: var(--homeButton);
     color: white;
     border: none;
     border-radius: 5px;
@@ -152,7 +153,7 @@ th {
 }
 
 #heroButton:hover {
-    background-color: #0056b3;
+    background-color: var(--homeButton);;
 }
 
 .middle-section, #boxes{
