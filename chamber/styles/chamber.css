@@ -252,7 +252,13 @@ form {
 
     }
 }
-
+dialog {
+    background-color: var(--titlebackgroundColor);
+}
+dialog button{
+    background-color: var(--navtextColor);
+    color: var(--titlebackgroundColor);
+}
 /* Thank you Page */
 #results {
     text-align: center;
