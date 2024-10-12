@@ -12,6 +12,8 @@
     <link href="styles/chamber.css" rel="stylesheet">
     <link href="styles/sizeChangesChamber.css" rel="stylesheet">
     <link href="../styles/normalize.css" rel="stylesheet">
+    <link rel="preload" as="image" href="images/TucsonMainPhoto.webp">
+
     <!-- scripts -->
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/home.js" defer></script>
@@ -24,9 +26,16 @@
 </head>
 <body>
     <header>
-            <img class="websiteLogo" src="images/TucsonMainPhoto.webp" loading="lazy" width="50" height="50" alt="Tuscon image" >
-            <div><h1>Tucson <br>Chamber of Commerce<br></h1> </div>     
-            <button id="menuButton"></button>
+        <img class="websiteLogo" 
+             src="images/TucsonMainPhoto.webp" 
+             loading="lazy" 
+             width="50" 
+             height="50" 
+             alt="Tucson image">
+        <div>
+            <h1>Tucson <br>Chamber of Commerce</h1>
+        </div>     
+        <button id="menuButton"></button>
     </header>
     <nav id="animateme">        
         <ul class="menuLinks">
@@ -39,7 +48,14 @@
     <main class="home">
         <section class="hero-image">
             <div>
-                <img src="images/TucsonMainPhoto.webp" loading="lazy" width="11" height="400" alt="Tucson Hero Image">
+                <picture>
+                    <source srcset="images/TucsonMainPhoto_large.webp" media="(min-width: 1500px)">
+                    <source srcset="images/TucsonMainPhoto_medium.webp" media="(min-width: 768px)">
+                    <img class="picture" src="images/TucsonMainPhoto.webp" loading="lazy" width="700" height="400" alt="Tucson image">
+                </picture>
+                
+
+            <div>
                 <button id="heroButton">Join Tucson's chamber</button>
             </div> 
         </section>
@@ -53,7 +69,7 @@
                 </div>
                 <ul>
                     <li>Tucson, AZ. Orchestra playing the music of the Phantom of the Opera on Sunday 13th.</li>
-                    <li>University of Arizona is hosting a debat competition on Saturday 12th.</li>
+                    <li>University of Arizona is hosting a debate competition on Saturday 12th.</li>
                 </ul>
             </section>
     
