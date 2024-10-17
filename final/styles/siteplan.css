@@ -1,0 +1,74 @@
+/* root of all  */
+:root {
+    --titleBackgroundColor: #222222;
+    --titleText: #a52a2a;
+    --navText: #ffffff;
+    --mainText:#222222;
+    --mainBackgroundColor: #d3d3d3;
+    --footerBackgroundColor: #222222;
+    --footerTextColor: #ffffff;
+}
+/* Fonts */
+
+html, body {
+    font-family: "ubuntu", sans-serif;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}  
+header {
+    text-align: center;
+    background-color: var(--titleBackgroundColor);
+    color: var(--titleText);
+    padding: 10px;
+    border-bottom: 5px solid var(--titleText);
+}
+main {
+    flex: 1;
+}
+h1{
+    font-family: "ubuntu", sans-serif;
+    font-weight: 900;
+    font-size: 200%;
+}
+h3 {
+    color: var(--titleText);
+}
+strong {
+    color: var(--titleText);
+}
+/* color schema */
+#titleB {
+    color: var(--titleBackgroundColor);    
+}
+#titleT {
+    color: var(--titleText);
+}
+#mainT {
+    color: var(--mainText);
+}
+#mainB {
+    color: var(--mainBackgroundColor);
+}
+#footerB {
+    color: var(--footerBackgroundColor);
+}
+#footerT {
+    color: var(--footerTextColor);
+}
+
+.section2 img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+}
+
+/* footer */
+footer {
+    background-color: var(--footerBackgroundColor);
+    color: var(--footerTextColor);
+    text-align: center;
+    border-top:5px solid var(--titleText);
+    padding: 5px;
+
+}

@@ -1,0 +1,72 @@
+{
+    "location1":{
+        "name": "Saguaro National Park",
+        "image": "https://i.redd.it/jpbgv3edxfs21.jpg",
+        "size":{
+            "large": {
+                "Width":"",
+                "height":""
+            },
+            "small": {
+                "Width":"",
+                "height":""
+            }
+        }
+    },
+    "location2": {
+        "name": "Pima Air and Space Museum",
+        "image": "https://media.trytn.press/pimaair/2018/12/Pima-Air-Space-Museum-Tucson-Arizona-2-1.jpg",
+        "size":{
+            "large": {
+                "Width":"",
+                "height":""
+            },
+            "small": {
+                "Width":"",
+                "height":""
+            }
+        }
+    },
+    "location3": {
+        "name": "Arizon-Sonara Desert Museum",
+        "image": "https://images.trvl-media.com/media/content/shared/images/travelguides/destination/602986/Arizona-Sonora-Desert-Museum-61441.jpg",
+        "size":{
+            "large": {
+                "Width":"",
+                "height":""
+            },
+            "small": {
+                "Width":"",
+                "height":""
+            }
+        }
+    },
+    "location4": {
+        "name":"Tucson Games and Gadgets",
+        "image": "http://tucsongamesandgadgets.com/wp-content/uploads/2023/07/20230215_160322-scaled.jpg",
+        "size":{
+            "large": {
+                "Width":"",
+                "height":""
+            },
+            "small": {
+                "Width":"",
+                "height":""
+            }
+        }
+    },
+    "location5": {
+        "name": "",
+        "image": "",
+        "size":{
+            "large": {
+                "Width":"",
+                "height":""
+            },
+            "small": {
+                "Width":"",
+                "height":""
+            }
+        }
+    }
+}

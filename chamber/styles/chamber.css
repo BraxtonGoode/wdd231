@@ -84,6 +84,9 @@ ul.menuLinks {
 main {
     flex: 1;
 }
+h3 {
+    text-align: center;
+}
 
 main h2 {
     text-align: center;
@@ -91,17 +94,21 @@ main h2 {
 .displaybuttons {
     text-align: center;
 }
-.business-table {
+/* table */
+table {
     width: 100%;
     border-collapse: collapse;
 }
 th, td {
     border: 1px solid black;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 th {
-    background-color: #f2f2f2; /* Light gray background for header */
+    background-color: var(--titlebackgroundColor);
+}
+#calender td:hover {
+    background-color: var(--titlebackgroundColor);
 }
 #cards {
  text-align: center;
@@ -164,8 +171,9 @@ th {
 }
 
 .events, .current-weather, .weather-forecast, .box{
+    
     flex: 1; 
-    margin: 0 10px; 
+    margin: .2rem 10px; 
     padding: 10px;
     border: 5px solid black;
     border-radius: 10px;    
@@ -180,8 +188,8 @@ th {
     margin: 10px;
     text-align: center;
 }
-/* Join page */
-.join {
+/* Join & Discovery Page*/
+.join, .discover {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -251,6 +259,16 @@ dialog button{
     background-color: var(--navtextColor);
     color: var(--titlebackgroundColor);
 }
+
+#about, #calender, #place_of_the_day{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .25fr, 1fr;
+    margin: .2rem 10px; 
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;    
+}
 /* Thank you Page */
 #results {
     text-align: center;
@@ -263,10 +281,6 @@ dialog button{
     margin: 10px;
     padding: 10px;
 }
-
-
-
-
 
 /* footer */
 footer {
