@@ -84,8 +84,9 @@ ul.menuLinks {
 main {
     flex: 1;
 }
-h3 {
+h3, #welcomeMessage {
     text-align: center;
+    
 }
 
 main h2 {
@@ -121,11 +122,12 @@ th {
     margin: 20px; 
 }
 
-.businessCard img {
+.businessCard img, .picture_location {
     width: auto;
     height: auto; 
     display: block; 
     margin: 0 auto; 
+    text-align: center;
 }
 /* main home page */
 .home {
@@ -192,11 +194,14 @@ th {
 .join, .discover {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;    
 }   
 
 .container{
     display: flex;
+}
+.sidebar {
+    max-width: 350px;
 }
 
 .form1 {
@@ -260,11 +265,11 @@ dialog button{
     color: var(--titlebackgroundColor);
 }
 
-#about, #calender, #place_of_the_day{
+#about, #calender, #place_of_the_day, #welcomeMessage{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .25fr, 1fr;
-    margin: .2rem 10px; 
+    grid-template-rows: .25fr 1fr;
+    margin: 10px; 
     padding: 10px;
     border: 5px solid black;
     border-radius: 10px;    
