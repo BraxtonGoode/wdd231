@@ -16,10 +16,10 @@ async function getFetchData(file) {
         const data = await response.json();
 
         const locations = Object.values(data)
-
+        displayWelcomeMessage()
         displayLocations(locations)
         displayPlaceOfTheDay(locations)
-        displayWelcomeMessage()
+
 
 
     } catch (error) {
@@ -59,7 +59,10 @@ const displayPlaceOfTheDay = (locations) => {
     const today = new Date()
     const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
     const currentDay = today.toLocaleDateString('en-US', options)
-    if (localStorage.getItem('place of the day')!== null){
+    console.log('test')
+    if (localStorage.getItem('place of the day')!= null){
+        console.log('test')
+        randomDayGenerator()
 
         if (localStorage.getItem('currentDay') === currentDay){ 
 
@@ -93,17 +96,15 @@ const displayPlaceOfTheDay = (locations) => {
 
             // console.log(image)
 
-        } else {
-            randomLocationGenerator(locations)
         }
 
         
     } else {
         randomLocationGenerator(locations)
-
     }
 
 }
+
 
 const randomLocationGenerator = (locations)=>{
     
@@ -112,13 +113,17 @@ const randomLocationGenerator = (locations)=>{
         const placeOfTheDay = locations[randomIndex];
         localStorage.setItem('place of the day', JSON.stringify(placeOfTheDay) )
 
-        // todays date long form
-        const today = new Date();
-        const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
-        const currentDay = today.toLocaleDateString('en-US', options)
-        localStorage.setItem('currentDay',currentDay)
 }
 
+
+const randomDayGenerator = ()=>{
+    
+    // todays date long form
+    const today = new Date();
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false };
+    const currentDay = today.toLocaleDateString('en-US', options)
+    localStorage.setItem('currentDay',currentDay)
+}
 
 const displayWelcomeMessage = () => {
     const today = new Date();
