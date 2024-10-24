@@ -71,9 +71,7 @@ const displayVideos = (videos) => {
         iframe.height = '315'; // Set the desired height        
 
         // Use the appropriate embed URL
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        
-    
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;       
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'; // Set allowed features
         iframe.allowFullscreen = true; // Allow fullscreen
         iframe.loading = 'lazy';
@@ -98,12 +96,8 @@ const displayVideos = (videos) => {
         // Append the video container to the cards element
         cards.appendChild(videoContainer);
     }
-    
-
-
-    
-
 };
+
 
 
 getFetchData(fethURL)

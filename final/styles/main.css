@@ -101,7 +101,10 @@ main {
     flex: 1;
     background-color: var(--mainBackgroundColor);
 }
+.videoofme{
+    text-align: center;
 
+}
 .aboutMe {
     text-align: center;
     display: grid;
