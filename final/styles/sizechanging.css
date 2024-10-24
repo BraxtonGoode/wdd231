@@ -1,0 +1,36 @@
+/* smaller screen */
+@media (max-width: 500px) { 
+
+.aboutMe, .aboutMe p {
+    flex-direction: column;
+    display: flex;
+    margin: 5px;
+}
+section {
+    flex-direction: column;
+}
+.displayVideos div iframe, .latestProject iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+}
+/* Larger screen */
+@media only screen and (min-width: 38rem) {
+    #menuButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+}
